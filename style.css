@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --purple: #2d142c;
+    --plum: #510a32;
+    --red-1: #801336;
+    --red-2: #c92a42;
+    --red-3: #ee4540;
+    --white: #fdd;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*BODY*/
+body{
+    background-color: var(--purple);
+}
+
+/*NAV*/
+.top-nav {
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: var(--red-1);
+    box-shadow: var(--red-2) 0px 0px 10px 0px;
+    
+}
+.top-nav h1{
+    float: left;
+    margin: 10px;
+    color: var(--white);
+}
+.top-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+.top-nav li{
+    margin: 10px;
+}
+.top-nav a{
+    color: var(--white);
+    font-size: 20px;
+    text-decoration: none;
+}
+.top-nav a:hover{
+    color: var(--red-3);
+    text-decoration: underline;
+}
+
+/*BODY*/
+
+.wrapper{
+    margin-top: 4em;
+    display: flex;
+    height: 100vh;
+}
+
+
+.small-div{
+    margin:1em;
+    height: 100vh;
+    border-radius: 10px;
+}
+
+
+.left {
+    display: flex;
+    height: max-content;
+    width: max-content;
+    background-color: var(--plum);
+}
+.left ul{
+    list-style: none;
+    justify-content: end;
+}
+.left li{
+    margin: 10px;
+}
+.left a{
+    color: var(--white);
+    font-size: 20px;
+    text-decoration: none;
+}
+.left a:hover{
+    color: var(--red-3);
+    text-decoration: underline;
+}
+
+.parent-div{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--plum);
+}
+.right{
+    display: flex;
+    flex:1;
+    height: 40vh;
+    width: max-content;
+    background-color: var(--plum);
+}
+.right img{   
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.parent-div{
+    padding-bottom: 1em;
+    height: max-content;
+}
+.parent-div figcaption{
+    text-align: center;
+    color: var(--white);
+    width: auto;
+}
+
+
+.main-div{
+    margin:1em;
+    display: flex;
+    width: 76%;
+    height: 80vh;
+    display: flex;
+    background-color: var(--plum);
+    border-radius: 10px;
+    color: var(--white);
+    padding:1em
+}
+.main-div img{   
+    display: flex;
+    width: max-content;
+    justify-content: center;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.main-div h1{
+    margin-left: 1em;
+}
+.main-div p{
+    margin-left: 1em;
+    text-justify: distribute;
+}
+
+.div{
+    box-shadow: var(--red-1) 0px 0px 10px 0px;
+}
